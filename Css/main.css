@@ -65,6 +65,20 @@ a {
 
 /*********************************************************************************************/
 
+/* Start my Framework */
+
+.spicial_header{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: var(--main-color);
+	margin-bottom: 40px;
+}
+
+/* End my Framework */
+
+/*********************************************************************************************/
+
 /* Start navbar */
 
 .navbar .contanier {
@@ -263,12 +277,6 @@ a {
 	margin: auto;
 }
 
-.properties_sale .contanier h1 {
-	text-align: center;
-	font-size: 30px;
-	text-transform: uppercase;
-	color: var(--main-color);
-}
 
 .properties_sale .property h1 {
 	color: var(--second-color);
@@ -323,10 +331,6 @@ a {
 }
 
 .properties_rental h1 {
-	text-align: center;
-	font-size: 30px;
-	text-transform: uppercase;
-	color: var(--main-color);
 	margin-bottom: 80px;
 }
 
