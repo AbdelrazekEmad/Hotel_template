@@ -102,6 +102,7 @@ a {
 
 .navbar .contanier .logo {
 	font-size: 23px;
+	color: var(--main-color);
 }
 
 .navbar .contanier .logo span {
@@ -343,7 +344,7 @@ a {
 	grid-template-columns: repeat(3,1fr);
 	grid-template-areas: 
 	"img text text";
-	margin: auto;
+	padding-bottom: 60px;
 	padding-left: 100px;
 }
 
@@ -369,8 +370,6 @@ a {
 
 
 .properties_rental-1 .property .img {
-	width: 330px;
-	height: 103%;
     margin-top: -50px;
 	box-shadow: var(--main-color) 9px 13px 20px 2px; 
 }
@@ -466,15 +465,12 @@ a {
 }
 
 .properties_rental-2 .property-2 .img {
-	width: 330px;
-    height: 370px;
     margin-top: 45px;	
 }
 
 @media (max-width: 768px){
 	.properties_rental-2 .property .img {
-    	width: 50vw;
-   		height: 50vh;
+		margin-top: 25px;
 	}
 }
 .properties_rental-2 .property-2 .text {
