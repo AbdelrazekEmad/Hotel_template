@@ -79,7 +79,7 @@ a {
 
 /*********************************************************************************************/
 
-/* Start navbar */
+/* Start header */
 
 .navbar .contanier {
 	position: relative;
@@ -169,7 +169,35 @@ a {
 	color: #396ace;
 }
 
-/* End navbar */
+/* End header */
+
+/*********************************************************************************************/
+
+/* Start chat with us */
+.chat {
+	position:fixed;
+	bottom: 25px;
+	right: 25px;
+}
+
+.chat button {
+	background-color: var(--second-color);
+    text-transform: uppercase;
+    padding: 20px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--second-color);
+    text-align: center;
+}
+@media (max-width: 768px) {
+	.chat {
+		display: none;
+	}
+}
+/* Start chat with us */
 
 /*********************************************************************************************/
 
