@@ -340,6 +340,27 @@ a {
 	grid-template-areas: 
 	"img text text";
 	margin: auto;
+	padding-left: 100px;
+}
+
+@media (max-width: 992px) {
+	.properties_rental-1 .property {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-areas: 
+		"img text";
+		margin: auto;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.properties_rental-1 .property {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	
 }
 
 .properties_rental-1 .property img {
@@ -347,6 +368,12 @@ a {
     height: 103%;
     margin-top: -50px;
     box-shadow: var(--main-color) 9px 13px 20px 2px; 	
+}
+
+@media (max-width: 768px) {
+	.properties_rental-1 .property img {
+		display: flex;
+	}
 }
 
 .properties_rental-1 .property .text {
@@ -375,6 +402,15 @@ a {
 	font-size: 16px;
 	color: #616E89;
 } 
+
+@media (max-width: 992px) {
+	.properties_rental-1 .property .text p {
+		width: 100%;
+		font-size: 16px;
+		color: #616E89;
+	} 
+	
+}
 
 .properties_rental-1 .property .text h3 {
 	color: var(--second-color);
