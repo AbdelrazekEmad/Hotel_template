@@ -22,7 +22,7 @@
 body {
 	font-family: 'Open Sans', sans-serif; /*main */
 	/* font-family: 'Work Sans', sans-serif;*/ /*second*/
-	height: 600vh;
+	height: 1000vh;
 }
 
 ul {
@@ -117,6 +117,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -197,7 +198,7 @@ a {
 		display: none;
 	}
 }
-/* Start chat with us */
+/* End chat with us */
 
 /*********************************************************************************************/
 
@@ -539,6 +540,7 @@ a {
 .properties_rental-2 .property-2 .text h3 {
 	color: var(--second-color);
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 /* End properties_rental */
@@ -622,3 +624,111 @@ a {
 }
 
 /* End realtors */
+
+/*********************************************************************************************/
+
+/* Start testimonial */
+
+.testimonial {
+	background: url(../image/Parallax\ -photo.jpg) no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	height: 550px;
+}
+
+
+.testimonial .ovarlay {
+    background-color: #163a8178;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 100px;
+}
+
+.testimonial .contanier h1 {
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 80px;	
+}
+
+.testimonial .contanier .toflex {
+	display: flex;
+}
+
+.testimonial .contanier .toflex .client_opinion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.testimonial .contanier .toflex .client_opinion i {
+	color: #CBB492;
+	font-size: 30px;
+}
+
+.testimonial .contanier .toflex .client_opinion h3 {
+	color: #CBB492;
+	font-size: 17px;
+}
+
+.testimonial .contanier .toflex .client_opinion p {
+	font-size: 15px;
+	text-align: center;
+    padding: 20px 60px;
+}
+
+@media (max-width: 992px) {
+	.testimonial .contanier .toflex .client_opinion p {
+		font-size: 15px;
+		text-align: center;
+		padding: 20px 20px;
+	}
+	.testimonial .ovarlay {
+		background-color: #163a8178;
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 100px 0px;
+	}
+}
+
+@media (max-width: 768px) {
+	.testimonial {
+		background: url(../image/Parallax\ -photo.jpg) no-repeat center;
+		background-attachment: fixed;
+		background-size: cover;
+		position: relative;
+		height: 700px;
+	}
+	.testimonial .ovarlay {
+		background-color: #163a8178;
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+	.testimonial .contanier .toflex {
+		display: flex;
+		flex-direction: column;
+	}
+	.testimonial .contanier .toflex .client_opinion {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		margin-bottom: 20px;
+	}
+}
+
+/* End testimonial */
