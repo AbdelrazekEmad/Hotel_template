@@ -558,6 +558,7 @@ a {
 	color: var(--main-color);
 	margin-bottom: 75px;
 }
+
 .realtors .all {
 	display: flex;
 }
@@ -589,4 +590,35 @@ a {
     line-height: 1.7;
     padding: 0 55px;
 }
+
+@media (max-width: 992px){
+	.realtors .all .tealtor h1 {
+		font-size: 18px;
+		text-align: center;
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 1.7;
+		padding: 0 5px;
+	}
+	.realtors .all .tealtor p {
+		text-align: center;
+		font-size: 16px;
+		line-height: 1.7;
+		padding: 0 25px;
+	}
+}
+@media (max-width: 768px) {
+	.realtors .all {
+		display: flex;
+		flex-direction: column;
+	}
+	.realtors .all .tealtor {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+}
+
 /* End realtors */
