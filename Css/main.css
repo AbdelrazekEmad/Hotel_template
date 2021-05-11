@@ -22,7 +22,7 @@
 body {
 	font-family: 'Open Sans', sans-serif; /*main */
 	/* font-family: 'Work Sans', sans-serif;*/ /*second*/
-	height: 1000vh;
+	height: 600vh;
 }
 
 ul {
@@ -542,3 +542,51 @@ a {
 }
 
 /* End properties_rental */
+
+/*********************************************************************************************/
+
+/* Start realtors */
+
+.realtors {
+	margin: 100px 0;
+}
+
+.realtors #spicial_header{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: var(--main-color);
+	margin-bottom: 75px;
+}
+.realtors .all {
+	display: flex;
+}
+
+.realtors .all .tealtor {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.realtors .all .tealtor i {
+	font-size: 60px;
+    color: #CBB492;
+}
+
+.realtors .all .tealtor h1 {
+	font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+	line-height: 1.7;
+    padding: 0 65px;
+}
+
+.realtors .all .tealtor p {
+	text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 55px;
+}
+/* End realtors */
