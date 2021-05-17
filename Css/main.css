@@ -166,8 +166,8 @@ a {
 	border-bottom: 2px solid red ;
 }
 
-.navbar .contanier nav a:hover {
-	color: #396ace;
+.navbar .contanier a:hover {
+    color: #616E89 ;
 }
 
 /* End header */
