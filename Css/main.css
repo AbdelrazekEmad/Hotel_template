@@ -207,12 +207,16 @@ a {
 /*********************************************************************************************/
 
 /* Start go to top button */
-@media () {
-    .gtp_button {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-    }
+
+.gtp_button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.gtp_button a {
+    font-size: 35px;
+    color: black;
 }
 
 /* End go to top button */
