@@ -209,16 +209,20 @@ a {
 /* Start go to top button */
 
 .gtp_button {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
 }
 
 .gtp_button a {
-    font-size: 35px;
-    color: black;
+	font-size: 40px;
+	color: var(--therd-color);
 }
-
+@media (min-width: 768px) {
+    .gtp_button {
+        display: none;
+    }
+}
 /* End go to top button */
 
 /*********************************************************************************************/
