@@ -1,10 +1,16 @@
+// Start Burger Menu
+let burgerIcon = document.querySelector(".toggle-menu");
+let navUl = document.querySelector(".navbar .contanier nav ul ");
+
+burgerIcon.addEventListener("click", () => {
+  navUl.classList.toggle("show");
+});
+
+// End Burger Menu
+
+// Start Toggle Proprty
 let list_iteams = document.querySelectorAll(".switcher li ");
 let proprty = document.querySelectorAll(".gallary .proprty");
-
-list_iteams.forEach((li) => {
-  li.addEventListener("click", removeActive);
-  li.addEventListener("click", mangeProprty);
-});
 
 function removeActive() {
   list_iteams.forEach((li) => {
@@ -19,14 +25,18 @@ function mangeProprty() {
   });
 
   document.querySelectorAll(this.dataset.btn).forEach((e) => {
-    e.style.display = "block";
-
+    e.style.display = "flex";
   });
-  
-console.log(document.querySelectorAll(this.dataset.btn))
+
+  console.log(document.querySelectorAll(this.dataset.btn));
 }
 
- 
+list_iteams.forEach((li) => {
+  li.addEventListener("click", removeActive);
+  li.addEventListener("click", mangeProprty);
+});
+// End Toggle Proprty
+
 // var i = 0;
 // var images = [];
 // var time = 3000;

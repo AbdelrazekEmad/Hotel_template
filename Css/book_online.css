@@ -91,6 +91,16 @@ a {
   min-height: 65px;
 }
 
+.navbar .contanier::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 15px;
+}
+
 /* logo  */
 
 .navbar .contanier .logo {
@@ -115,6 +125,7 @@ a {
 
 .navbar .contanier .toggle-menu {
   font-size: 22px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -130,16 +141,22 @@ a {
 @media (max-width: 767px) {
   .navbar .contanier nav ul {
     display: none;
-  }
-
-  .navbar .contanier nav .toggle-menu:hover + ul {
-    display: flex;
     flex-direction: column;
     position: absolute;
     top: 100%;
     width: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.03);
+  }
+  .navbar .contanier nav ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: rgba(30 48 84 / 85%);
+    z-index: 10000;
   }
 }
 
@@ -154,9 +171,22 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .navbar .contanier nav a {
+    display: block;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 20px 25px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+}
+
 .navbar .contanier nav a.active {
   color: red;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid red;
 }
 
 .navbar .contanier a:hover {
@@ -220,9 +250,6 @@ a {
 /*********************************************************************************************/
 
 /* Start multi-offerings */
-.multi-offerings {
-}
-
 .multi-offerings .toggle {
   margin-top: 100px;
 }
@@ -274,7 +301,7 @@ a {
 }
 
 .multi-offerings .gallary .toflex .proprty {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
